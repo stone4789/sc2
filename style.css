@@ -1,0 +1,171 @@
+/* RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------ END OF RESET------------------ */
+html, body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto','Arial', sans-serif;
+}
+
+header {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    border: 1px solid white;
+    min-height: 100px;
+}
+
+.header-div {
+    display: flex;
+}
+
+.header-div-left {
+    width: 75vw;
+}
+
+.header-div-right {
+    width: 25vw;
+}
+
+#shares-header,
+footer {
+    background-color: rgb(132, 132, 132, 0.3);
+    color: rgb(78, 78, 78);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    height: 50%;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: 5px;
+    height: 30vh;
+}
+
+i {
+    color: rgb(135, 135, 135);
+    margin: 30px;
+}
+i:hover {
+    color: white;
+    margin: 30px;
+}
+
+.header-div-left {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 70vw;
+}
+
+.header-div-right {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#admin-span {
+    align-items: center;
+    color: rgb(35, 119, 179);
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    justify-content: center;
+}
+
+#logo-span {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px #2B2B2B;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    width: 24%;
+    overflow: auto;
+}
+
+.card-img {
+    align-self: center;
+    height: 9vh;
+    margin-top: 6px;
+    width: 35%;
+}
+
+.card-text-container {
+    border-top: 1px solid black;
+    width: 90%;
+    margin: .5rem auto;
+}
